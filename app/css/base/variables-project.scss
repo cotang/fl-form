@@ -1,0 +1,21 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Bootstrap variables
+// -------------------------------
+
+// Custom Bootstrap variables
+@import 'variables-bootstrap.scss';
+
+// Default Bootstrap variables
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss';
+
+
+// Project variables
+// -------------------------------
+
+$link-color:                      lighten($text-color, 15%);
+$link-hover-color:                darken($link-color, 30%);
+$border:                          lighten(#000, 70%);

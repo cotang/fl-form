@@ -1,0 +1,37 @@
+    <section class="modal-window">
+        <h2 class="modal-window__logo">Logo</h2> <!-- img -->
+        <ul class="modal-window__tabs">
+            <li class="modal-window__tab  modal-window__tab--active"><a href="#entrance">Вход в панель</a></li>
+            <li class="modal-window__tab"><a href="#reg">Регистрация</a></li>            
+        </ul>
+        <section class="content">
+            <section id="entrance" class="tab  tab--active  entrance">
+                <form role="form" class="entrance__form">
+                    <input type="text" class="form-control" placeholder="Логин или e-mail">
+                    <input type="password" class="form-control" placeholder="Пароль">
+                    <button type="submit" class="btn btn-block btn-primary">Войти</button>               
+                </form>
+                <div class="entrance__forgot"><a href="" class="entrance__forgot-link">Забыли пароль?</a></div>                 
+            </section>
+            <section id="reg" class="tab  reg">
+                <form role="form" class="reg__form">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                    <input type="password" class="form-control" placeholder="Пароль">
+                    <input type="password" class="form-control" placeholder="Повторите пароль">
+                    <button type="submit" class="btn btn-block btn-primary">Зарегистрироваться</button>
+                </form>                    
+                <div class="reg__conditions"><a href="" class="reg__conditions-link">Регистрируясь, вы соглашаетесь с нашими</a> условиями использования и политикой конфиденциальности</div>
+            </section>
+            <section class="forgot">
+                <div class="forgot__text">
+                    <h3>Забыли пароль?</h3>
+                    <p>Не переживайте. Просто введите свою эл.почту или логин, и мы вышлем инструкцию по восстановлению.</p>
+                </div>
+                <form role="form" class="forgot__form">                                
+                    <input type="text" class="form-control" placeholder="Логин или e-mail">
+                    <button type="submit" class="btn btn-block btn-primary">Восстановить пароль</button>
+                </form>                    
+                <div class="forgot__back"><a href="" class="forgot__back-link"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>Назад к форме входа</a></div>
+            </section>            
+        </section>
+    </section>

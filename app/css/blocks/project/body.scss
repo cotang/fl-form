@@ -1,0 +1,130 @@
+body{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+
+.modal-window{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 300px;
+	max-width: 100vw; 
+	transform: translate(-50%, -200px);
+	background-color: #fff;
+	padding: 20px 0;
+	box-shadow: 0 0 10px $border;
+
+	&__logo{
+		font-weight: 600;
+		font-size: 2.5em;
+		margin: 20px 0; 
+	}
+	&__tabs{
+		padding-left: 0;
+		width: 100%;
+		border-bottom: 1px solid $border;
+	}
+	&__tab{
+		display: inline-block;
+		padding: 5px 10px;
+		&--active{
+			font-weight: 700;
+			border-bottom: 3px solid $brand-primary;
+			a{
+				color: $link-hover-color;				
+			}
+		}
+	}
+}
+
+.content{
+
+}
+
+.entrance{
+	padding: 0 20px;	
+	&__form{
+		margin-top: 20px;
+		input{
+			padding: 10px;
+			margin-bottom: -1px;
+			position: relative;
+			&:focus{
+				z-index: 2;
+			}
+			&:last-of-type{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__forgot{
+		margin: 20px 0 0;
+		font-size: 0.9em;
+	}
+}
+
+.reg{
+	padding: 0 20px;	
+	display: none;
+	&__form{
+		margin-top: 20px;
+		input{
+			padding: 10px;
+			margin-bottom: -1px;
+			position: relative;
+			&:focus{
+				z-index: 2;
+			}
+			&:last-of-type{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__conditions{
+		margin: 20px 0 0;
+		font-size: 0.9em;
+	}
+}
+
+.forgot{
+	padding: 0 20px;	
+	display: none;
+	border-top: 1px solid $border;
+	&__text{
+		h3{
+			font-size: 1.5em;
+		}
+		p{
+			font-size: 0.85em;
+		}
+	}
+	&__form{
+		margin-top: 20px;
+		input{
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+	}
+	&__back{
+		margin: 20px 0 0;
+		font-size: 0.9em;
+		i{
+			margin-right: 5px;
+		}
+		a{
+			color: $link-hover-color;
+		}
+	}	
+}
+
+
+.page-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid $border;
+}
